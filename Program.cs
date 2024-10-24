@@ -1,33 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
-namespace CS012_Array
+namespace pacman.phuong
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            // string sinhvien1 = "A";
-            // string sinhvien2 = "B";
-            // string sinhvien3 = "C";
-
-            // Console.WriteLine(sinhvien1);
-            // Console.WriteLine(sinhvien2);
-            // Console.WriteLine(sinhvien3);
-
-            string[] ds;
-            ds = new string[3];
-
-            ds[0] = "A";
-            ds[1] = "B";
-            ds[2] = "C";
-
-            Console.WriteLine(ds[0]);
-            Console.WriteLine(ds[1]);
-            Console.WriteLine(ds[2]);
-               
- 
-
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
         }
     }
 }
-
